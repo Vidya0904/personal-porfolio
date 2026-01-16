@@ -43,9 +43,13 @@ function Banner() {
                   <a href="#" className="main-btn">
                     Let's Talk
                   </a>
-                  <button className="dwnld-cv">
-                    Download CV <TfiDownload />{" "}
-                  </button>
+                  <a
+                    href="./public/asset/VIDYA_RESUME.pdf"
+                    download
+                    className="dwnld-cv"
+                  >
+                    Download CV <TfiDownload />
+                  </a>
                 </div>
               </section>
             </Col>
