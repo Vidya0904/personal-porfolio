@@ -44,7 +44,7 @@ function Banner() {
                     Let's Talk
                   </a>
                   <a
-                    href="/asset/VIDYA_RESUME.pdf"
+                    href={`${import.meta.env.BASE_URL}asset/VIDYA_RESUME.pdf`}
                     download
                     className="dwnld-cv"
                   >
