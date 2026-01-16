@@ -44,7 +44,7 @@ function Banner() {
                     Let's Talk
                   </a>
                   <a
-                    href="./public/asset/VIDYA_RESUME.pdf"
+                    href="/asset/VIDYA_RESUME.pdf"
                     download
                     className="dwnld-cv"
                   >
