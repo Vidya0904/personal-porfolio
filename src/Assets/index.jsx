@@ -1,5 +1,5 @@
 const IMAGES = {
-  myimg: "./public/Assets/its_me3_copy.png",
+  myimg: "./Assets/its_me3_copy.png",
   hand: "./public/Assets/hand.png",
   star: "./public/Assets/star.png",
   curve_solid: "./public/Assets/curve_solid.png",
