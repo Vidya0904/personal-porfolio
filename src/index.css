@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Mona Sans";
+  src: url("/fonts/Mona-Sans-870dff5a10221ba7d01cc47eca10d0b2f911bd4196bb941985490bd8c7363cd9.woff2")
+    format("woff2");
+}
+
+:root {
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --font-size11: 11px;
+  --font-size12: 12px;
+  --font-size38: 38px;
+}
+
+.container {
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
+
+.col-lg-4 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+button {
+  border: 0;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+/* download btn starts */
+.dwnld-cv {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: #4a08a0;
+  transition: all 0.2s ease;
+}
+
+.dwnld-cv:active {
+  transform: scale(0.96);
+}
+
+.dwnld-cv:before,
+.dwnld-cv:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.dwnld-cv:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #4a08a0 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #4a08a0 20%, transparent 30%),
+    radial-gradient(circle, #4a08a0 20%, transparent 20%),
+    radial-gradient(circle, #4a08a0 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #4a08a0 15%, transparent 20%),
+    radial-gradient(circle, #4a08a0 20%, transparent 20%),
+    radial-gradient(circle, #4a08a0 20%, transparent 20%),
+    radial-gradient(circle, #4a08a0 20%, transparent 20%),
+    radial-gradient(circle, #4a08a0 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.dwnld-cv:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #4a08a0 20%, transparent 20%),
+    radial-gradient(circle, #4a08a0 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #4a08a0 15%, transparent 20%),
+    radial-gradient(circle, #4a08a0 20%, transparent 20%),
+    radial-gradient(circle, #4a08a0 20%, transparent 20%),
+    radial-gradient(circle, #4a08a0 20%, transparent 20%),
+    radial-gradient(circle, #4a08a0 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+/* download btn end  */
+
+/* Main btn starts */
+
+.main-btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ce2b6f;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+/* Main btn ends  */
