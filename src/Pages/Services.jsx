@@ -1,3 +1,4 @@
+import IMAGES from "../Assets";
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { IoIosArrowRoundBack } from "react-icons/io";
@@ -7,56 +8,56 @@ function Services() {
   const services = [
     {
       id: 1,
-      service_img: "./src/Assets/Services/ux_design_black.png",
+      service_img: IMAGES.ux_design_black,
       service_heading: "Website Design (UI/UX)",
       service_para:
         "I design clean, user-friendly and responsive website layouts. I focus on structure, spacing, colors and typography so that the site feels easy to read and easy to use.",
     },
     {
       id: 2,
-      service_img: "./src/Assets/Services/front_end.png",
+      service_img: IMAGES.front_end,
       service_heading: "Frontend Development",
       service_para:
         "I convert designs into working web pages using HTML, CSS, JavaScript, Bootstrap, Tailwind and React. I build responsive layouts that work across devices and browsers.",
     },
     {
       id: 3,
-      service_img: "./src/Assets/Services/website_redesign.png",
+      service_img: IMAGES.website_redesign,
       service_heading: "Website Redesign & Improvements",
       service_para:
         "I update existing websites to look modern, improve alignment, spacing, fonts, colors and overall visual consistency. I also fix layout issues and broken UI.",
     },
     {
       id: 4,
-      service_img: "./src/Assets/Services/landing_page.png",
+      service_img: IMAGES.landing_page,
       service_heading: "Landing Page Design",
       service_para:
         "I design and build high-quality landing pages for portfolios, products, businesses and personal brands.",
     },
     {
       id: 5,
-      service_img: "./src/Assets/Services/responsive_design.png",
+      service_img: IMAGES.responsive_design,
       service_heading: "Responsive Fixes (Mobile & Tablet)",
       service_para:
         "I fix websites that look good on desktop but break on mobile, making sure everything adjusts smoothly.",
     },
     {
       id: 6,
-      service_img: "./src/Assets/Services/ui_enhacement.png",
+      service_img: IMAGES.ui_enhacement,
       service_heading: "UI Enhancements & Animations",
       service_para:
         "I add subtle transitions, hover effects and micro-animations to make the interface feel smooth and engaging.",
     },
     {
       id: 7,
-      service_img: "./src/Assets/Services/performance.png",
+      service_img: IMAGES.performance,
       service_heading: "Website Performance & UI Review",
       service_para:
         "I review websites for design issues, accessibility, readability, spacing, color contrast and provide improvement suggestions.",
     },
     {
       id: 8,
-      service_img: "./src/Assets/Services/wordpress.png",
+      service_img: IMAGES.wordpress,
       service_heading: "WordPress Website Setup & Customization",
       service_para:
         "I install, customize and style WordPress themes, and adjust layouts according to requirements.",

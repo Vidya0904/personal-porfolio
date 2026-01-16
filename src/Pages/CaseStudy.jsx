@@ -1,3 +1,4 @@
+import IMAGES from "../Assets";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { GoArrowUpRight } from "react-icons/go";
@@ -22,7 +23,7 @@ function CaseStudy() {
               <Row>
                 <Col lg={6} md={12}>
                   <div className="cs-img">
-                    <img src="./Src/Assets/CaseStudy/finance.jpg" />
+                    <img src={IMAGES.finance} />
                   </div>
                 </Col>
                 <Col lg={6} md={12}>
@@ -55,7 +56,7 @@ function CaseStudy() {
                 </Col>
                 <Col lg={6} md={12}>
                   <div className="cs-img">
-                    <img src="./Src/Assets/CaseStudy/real_estate.jpg" />
+                    <img src={IMAGES.real_estate} />
                   </div>
                 </Col>
               </Row>
@@ -64,7 +65,7 @@ function CaseStudy() {
               <Row>
                 <Col lg={6} md={12}>
                   <div className="cs-img">
-                    <img src="./Src/Assets/CaseStudy/company.jpg" />
+                    <img src={IMAGES.company} />
                   </div>
                 </Col>
                 <Col lg={6} md={12}>

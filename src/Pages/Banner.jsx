@@ -4,6 +4,7 @@ import { TfiDownload } from "react-icons/tfi";
 import { TiSocialFacebook, TiSocialLinkedin } from "react-icons/ti";
 import { BiLogoInstagram } from "react-icons/bi";
 import { MdOutlineEmail } from "react-icons/md";
+import IMAGES from "../Assets";
 
 function Banner() {
   return (
@@ -13,17 +14,13 @@ function Banner() {
           <Row>
             <Col lg={6} md={12} sm={12}>
               <section className="hero-l-section">
-                <img
-                  src="./src/Assets/hand.png"
-                  width="40px"
-                  className="hand-img"
-                />
+                <img src={IMAGES.hand} width="40px" className="hand-img" />
                 <p className="greeting">
                   Hello! <span>I'm Vidya</span>
                 </p>
                 <p className="profile">
                   <span>Web Designer</span>{" "}
-                  <img src="./src/Assets/star.png" width="33px" />
+                  <img src={IMAGES.star} width="33px" />
                 </p>
                 <div className="summary">
                   <p>
@@ -58,18 +55,18 @@ function Banner() {
                   <div className="hello-round">Hello</div>
                   <img
                     className="my-img"
-                    src="./src/Assets/its_me3_copy.png"
+                    src={IMAGES.myimg}
                     width="450px"
                     height="670px"
                   />
                   <img
-                    src="./src/Assets/curve_solid.png"
+                    src={IMAGES.curve_solid}
                     width="100px"
                     height="40px"
                     className="curve-solid"
                   />
                   <img
-                    src="./src/Assets/curve_hallow.png"
+                    src={IMAGES.curve_hallow}
                     width="100px"
                     height="40px"
                     className="curve-hallow"
@@ -82,19 +79,19 @@ function Banner() {
         <section className="profile-names">
           <ul>
             <li>
-              <img src="./src/Assets/star2.png" width="25px" />
+              <img src={IMAGES.star2} width="25px" />
               <span>Web Design</span>
             </li>
             <li>
-              <img src="./src/Assets/star2.png" width="25px" />
+              <img src={IMAGES.star2} width="25px" />
               <span>Front End Development</span>
             </li>
             <li>
-              <img src="./src/Assets/star2.png" width="20px" />
+              <img src={IMAGES.star2} width="20px" />
               <span>Web App Design</span>
             </li>
             <li>
-              <img src="./src/Assets/star2.png" width="20px" />
+              <img src={IMAGES.star2} width="20px" />
               <span>UI/UX Design</span>
             </li>
           </ul>
