@@ -14,10 +14,12 @@ function Banner() {
           <Row>
             <Col lg={6} md={12} sm={12}>
               <section className="hero-l-section">
-                <img src={IMAGES.hand} width="40px" className="hand-img" />
-                <p className="greeting">
-                  Hello! <span>I'm Vidya</span>
-                </p>
+                <div className="hand-greeting">
+                  <img src={IMAGES.hand} width="40px" className="hand-img" />
+                  <p className="greeting">
+                    Hello! <span>I'm Vidya</span>
+                  </p>
+                </div>
                 <p className="profile">
                   <span>Web Designer</span>{" "}
                   <img src={IMAGES.star} width="33px" />

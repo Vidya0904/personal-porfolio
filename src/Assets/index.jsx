@@ -1,5 +1,6 @@
 const IMAGES = {
   myimg: "asset/its_me3_copy.png",
+  myimg2: "asset/its_me2.jpg",
   hand: "asset/hand.png",
   star: "asset/star.png",
   curve_solid: "asset/curve_solid.png",
@@ -18,6 +19,7 @@ const IMAGES = {
   finance: "asset/CaseStudy/finance.jpg",
   real_estate: "asset/CaseStudy/real_estate.jpg",
   company: "asset/CaseStudy/company.jpg",
+  graduation_cap: "asset/graduation_cap.png",
 };
 
 export default IMAGES;

@@ -6,6 +6,7 @@ import Experience from "./Pages/Experience";
 import CaseStudy from "./Pages/CaseStudy";
 import Contact from "./Pages/Contact";
 import Footer from "./Components/Footer";
+import About from "./Pages/About";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <Banner />
         <Services />
+        <About />
         <Experience />
         <CaseStudy />
         <Contact />

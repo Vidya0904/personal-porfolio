@@ -541,6 +541,145 @@
 
 /* Services Ends --------------------------- */
 
+/* About starts */
+
+.about {
+  padding: 40px 0;
+  scroll-margin-top: 100px;
+
+  .about-heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .about-inner-heading {
+      width: 50%;
+      text-align: center;
+
+      h1 {
+        font-size: var(--font-size38);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000;
+      }
+
+      p {
+        font-size: 12px;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .about-inner-section {
+    margin-top: 80px;
+
+    .about-left-inner {
+      width: 100%;
+      .graduation-cap {
+        width: 100%;
+      }
+      h4 {
+        color: #000;
+        font-weight: 700;
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      ul {
+        padding-left: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        li {
+          list-style: none;
+          padding: 10px 40px;
+          background-color: #4a08a0;
+          color: #fff;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .about-right-inner {
+      h4 {
+        color: #000;
+        font-weight: 700;
+        font-size: 30px;
+      }
+
+      ul {
+        display: block;
+        position: relative;
+        padding-top: 20px;
+
+        &::before {
+          content: "";
+          width: 1.6px;
+          height: 100%;
+          background-color: #000;
+          display: block;
+          position: absolute;
+          left: 0;
+        }
+        li {
+          list-style: none;
+          margin: 15px 0;
+          background-color: #fff;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          border-radius: 15px;
+          padding: 20px;
+
+          .edu-cap {
+            position: absolute;
+            left: -9px;
+            z-index: 99;
+            background-color: #fff;
+          }
+
+          .edu-date {
+            background-color: #dedddd;
+            font-size: 12px;
+            border-radius: 10px;
+            padding: 5px 10px;
+            width: fit-content;
+          }
+
+          h6 {
+            color: #000;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 0;
+          }
+
+          .edu-deg,
+          span {
+            font-size: 14px;
+            color: #000;
+          }
+        }
+      }
+    }
+
+    .about-img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 400px;
+        height: 500px;
+      }
+    }
+  }
+}
+
+/* About ends ----------------------------- */
+
 /* Experience Starts */
 
 .experience {
@@ -905,22 +1044,48 @@
 
 /* Mobile */
 @media (max-width: 576px) {
-  .gradient,
+  /* .gradient,
   .line1,
   .line2 {
     display: none;
+  } */
+
+  .gradient {
+    margin: -90px 0 0 0px !important;
+  }
+
+  .line1 {
+    margin-left: 70px;
+  }
+
+  .line2 {
+    margin-left: 30px;
   }
 
   .hero-section {
+    margin-top: 0;
+
     .hero-l-section {
-      .greeting {
-        font-size: 30px !important;
+      .hand-greeting {
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+
+        .hand-img {
+          margin: 0;
+        }
+
+        .greeting {
+          font-size: 30px !important;
+          padding-left: 10px;
+        }
       }
       .profile {
         font-size: 12px;
+        margin: 0;
 
         &::before {
-          width: 60px;
+          width: 100px;
         }
 
         span {
@@ -947,20 +1112,27 @@
             width: 160px;
           }
         }
+
+        .curve-solid {
+          margin: 80px 0 0 250px !important;
+        }
+        .curve-hallow {
+          margin: 80px 0 0 267px !important;
+        }
       }
     }
 
     .banner-social {
       .banner-mail {
-        &::before {
-          display: none;
-        }
       }
       ul {
-        display: block;
+        padding-left: 0;
 
         &::before {
           display: none;
+        }
+        li {
+          padding: 0 10px 0 0;
         }
       }
     }
@@ -996,7 +1168,31 @@
       }
     }
   }
+  .contact {
+    .con-heading {
+      .con-inner-heading {
+        .con-h2 {
+          text-align: center;
+        }
+      }
+    }
+    .con-form-section {
+      .con-form {
+        padding: 0;
+        margin-bottom: 30px;
 
+        .form-control {
+          padding: 10px 20px;
+        }
+      }
+      .sendme-btn {
+        button {
+          font-size: 16px;
+          padding: 15px 20px;
+        }
+      }
+    }
+  }
   .footer {
     .footer-inner {
       display: block !important;
@@ -1072,6 +1268,13 @@
       .my-frame {
         display: flex;
         justify-content: center;
+
+        .curve-solid {
+          margin: 200px 0 0 400px;
+        }
+        .curve-hallow {
+          margin: 200px 0 0 415px;
+        }
       }
     }
     .profile-names {
