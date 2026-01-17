@@ -1138,6 +1138,14 @@
     }
   }
 
+  .about {
+    .about-heading {
+      .about-inner-heading {
+        width: 100%;
+      }
+    }
+  }
+
   .experience {
     .exp-main-box {
       .exp-inner-box {
