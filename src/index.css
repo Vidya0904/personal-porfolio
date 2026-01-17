@@ -30,6 +30,15 @@ p {
   margin-bottom: 0 !important;
 }
 
+.radial-circle {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 80px;
+  }
+}
+
 /* download btn starts */
 .dwnld-cv {
   position: relative;

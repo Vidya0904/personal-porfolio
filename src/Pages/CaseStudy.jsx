@@ -7,6 +7,9 @@ function CaseStudy() {
   return (
     <>
       <section className="casestudy" id="case-study">
+        <div className="radial-circle">
+          <img src={IMAGES.radia_circle} />
+        </div>
         <Container>
           <div className="cs-heading">
             <div className="cs-inner-heading">

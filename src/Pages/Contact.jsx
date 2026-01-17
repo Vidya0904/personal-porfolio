@@ -1,3 +1,4 @@
+import IMAGES from "../Assets";
 import React, { useState } from "react";
 import { Button, Col, Container, Form, FormGroup, Row } from "react-bootstrap";
 
@@ -40,7 +41,10 @@ function Contact() {
             <h1 className="con-h1">
               <span>Say Hi! </span>and tell me about
             </h1>
-            <h1 className="con-h2">your idea</h1>
+            <h1 className="con-h2">
+              <img src={IMAGES.arrow} className="con-arrow" />
+              your idea
+            </h1>
             <p>Have a nice works? reach out ans let's chat.</p>
           </div>
         </div>

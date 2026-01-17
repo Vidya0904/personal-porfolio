@@ -75,7 +75,9 @@ function Header() {
                         <h6>Contact Me</h6>
                         <GoArrowUpRight color="#000" />
                       </a>
-                      <p>vidyajaywant2000@gmail.com</p>
+                      <p>
+                        Mobile No.: <br /> +91 9307800435
+                      </p>
                     </li>
                   </ul>
                 </div>

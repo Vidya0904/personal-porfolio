@@ -7,6 +7,9 @@ function About() {
   return (
     <>
       <section className="about" id="about-me">
+        <div className="radial-circle">
+          <img src={IMAGES.radia_circle} />
+        </div>
         <Container>
           <div className="about-heading">
             <div className="about-inner-heading">
@@ -30,17 +33,39 @@ function About() {
                     of technologies I've worked with
                   </p>
                   <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Bootsrap5</li>
-                    <li>Javascript</li>
-                    <li>JQuery</li>
-                    <li>MySql</li>
-                    <li>MsSql</li>
-                    <li>Tailwind Css</li>
-                    <li>React + Vite</li>
-                    <li>Material URL</li>
-                    <li>Figma</li>
+                    <li>
+                      <span>HTML5</span>
+                    </li>
+                    <li>
+                      <span>CSS3</span>
+                    </li>
+                    <li>
+                      <span>Bootsrap5</span>
+                    </li>
+                    <li>
+                      <span>Javascript</span>
+                    </li>
+                    <li>
+                      <span>JQuery</span>
+                    </li>
+                    <li>
+                      <span>MySql</span>
+                    </li>
+                    <li>
+                      <span>MsSql</span>
+                    </li>
+                    <li>
+                      <span>Tailwind Css</span>
+                    </li>
+                    <li>
+                      <span>React + Vite</span>
+                    </li>
+                    <li>
+                      <span>Material URL</span>
+                    </li>
+                    <li>
+                      <span>Figma</span>
+                    </li>
                   </ul>
                 </div>
               </Col>

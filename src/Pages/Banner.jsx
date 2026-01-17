@@ -1,9 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { TfiDownload } from "react-icons/tfi";
-import { TiSocialFacebook, TiSocialLinkedin } from "react-icons/ti";
+import { TiSocialLinkedin } from "react-icons/ti";
 import { BiLogoInstagram } from "react-icons/bi";
 import { MdOutlineEmail } from "react-icons/md";
+import { LiaGithub } from "react-icons/lia";
 import IMAGES from "../Assets";
 
 function Banner() {
@@ -42,7 +43,7 @@ function Banner() {
                   </ul>
                 </div>
                 <div className="pair-btn">
-                  <a href="#" className="main-btn">
+                  <a href="#contact" className="main-btn">
                     Let's Talk
                   </a>
                   <a
@@ -65,18 +66,8 @@ function Banner() {
                     width="450px"
                     height="670px"
                   />
-                  <img
-                    src={IMAGES.curve_solid}
-                    width="100px"
-                    height="40px"
-                    className="curve-solid"
-                  />
-                  <img
-                    src={IMAGES.curve_hallow}
-                    width="100px"
-                    height="40px"
-                    className="curve-hallow"
-                  />
+                  <img src={IMAGES.curve_solid} className="curve-solid" />
+                  <img src={IMAGES.curve_hallow} className="curve-hallow" />
                 </div>
               </section>
             </Col>
@@ -108,22 +99,28 @@ function Banner() {
               <Col lg={6}>
                 <ul>
                   <li>
-                    <TiSocialLinkedin size={20} />
-                    <span>Linkedin</span>
+                    <a href="https://www.linkedin.com/in/vidya-sonawane-233486207">
+                      <TiSocialLinkedin size={20} />
+                      <span>Linkedin</span>
+                    </a>
                   </li>
                   <li>
-                    <BiLogoInstagram size={20} />
-                    <span>Instagram</span>
+                    <a href="https://github.com/Vidya0904">
+                      <LiaGithub size={20} />
+                      <span>Github</span>
+                    </a>
                   </li>
                   <li>
-                    <TiSocialFacebook size={20} />
-                    <span>Facebook</span>
+                    <a href="https://www.instagram.com/dads_angel_9400?igsh=NWswNGloeXQ4bnE4">
+                      <BiLogoInstagram size={20} />
+                      <span>Instagram</span>
+                    </a>
                   </li>
                 </ul>
               </Col>
               <Col lg={6}>
                 <div className="banner-mail">
-                  <a href="#">
+                  <a href="mailto:vidyajaywant2000@gmail.com">
                     <MdOutlineEmail size={20} />
                     <span>vidyajaywant2000@gmail.com</span>
                   </a>

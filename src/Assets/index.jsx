@@ -20,6 +20,9 @@ const IMAGES = {
   real_estate: "asset/CaseStudy/real_estate.jpg",
   company: "asset/CaseStudy/company.jpg",
   graduation_cap: "asset/graduation_cap.png",
+  arrow: "asset/arrows.png",
+  radia_circle: "asset/radia_circle.png",
+  dot_arrow: "asset/dot_arrow.png",
 };
 
 export default IMAGES;

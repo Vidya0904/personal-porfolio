@@ -255,11 +255,13 @@
         position: absolute;
         margin: 220px -30px 0 0;
         rotate: calc(45deg);
+        width: 100px;
       }
       .curve-hallow {
         position: absolute;
         margin: 219px -37px 0 0;
         rotate: calc(47deg);
+        width: 100px;
         opacity: 0.5;
       }
     }
@@ -308,17 +310,21 @@
 
       li {
         list-style: none;
-        font-size: var(--font-size12);
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #000;
-        padding: 0 20px;
-        display: flex;
-        align-items: center;
 
-        span {
-          padding-left: 5px;
-          margin-top: 2px;
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          font-size: var(--font-size12);
+          font-weight: bold;
+          text-transform: uppercase;
+          color: #000;
+          padding: 0 20px;
+
+          span {
+            padding-left: 5px;
+            margin-top: 2px;
+          }
         }
       }
     }
@@ -546,6 +552,7 @@
 .about {
   padding: 40px 0;
   scroll-margin-top: 100px;
+  position: relative;
 
   .about-heading {
     display: flex;
@@ -575,8 +582,14 @@
 
     .about-left-inner {
       width: 100%;
+
       .graduation-cap {
-        width: 100%;
+        width: 400px;
+        transition: transform 0.5s ease;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
       h4 {
         color: #000;
@@ -601,6 +614,19 @@
           background-color: #4a08a0;
           color: #fff;
           font-size: 14px;
+          font-weight: 500;
+          cursor: pointer;
+
+          span {
+            display: inline-block;
+            transition: transform 0.2s ease;
+          }
+
+          &:hover {
+            span {
+              transform: scale(1.3);
+            }
+          }
         }
       }
     }
@@ -911,6 +937,10 @@
         font-size: 60px;
         font-weight: 800;
         text-align: end;
+
+        .con-arrow {
+          width: 300px;
+        }
       }
 
       p {
@@ -1020,12 +1050,21 @@
 
       li {
         list-style: none;
-        font-size: 20px;
-        font-weight: 500;
-        color: #434343;
-        padding: 0 20px;
-        display: flex;
-        align-items: center;
+
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 20px;
+          color: #434343;
+          padding: 0 20px;
+
+          span {
+            padding-left: 5px;
+            margin-top: 2px;
+          }
+        }
 
         span {
           padding-left: 5px;
@@ -1044,12 +1083,6 @@
 
 /* Mobile */
 @media (max-width: 576px) {
-  /* .gradient,
-  .line1,
-  .line2 {
-    display: none;
-  } */
-
   .gradient {
     margin: -90px 0 0 0px !important;
   }
@@ -1115,9 +1148,11 @@
 
         .curve-solid {
           margin: 80px 0 0 250px !important;
+          width: 70px;
         }
         .curve-hallow {
-          margin: 80px 0 0 267px !important;
+          margin: 80px 0 0 263px !important;
+          width: 70px;
         }
       }
     }
@@ -1126,13 +1161,17 @@
       .banner-mail {
       }
       ul {
-        padding-left: 0;
+        padding-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
 
         &::before {
           display: none;
         }
         li {
-          padding: 0 10px 0 0;
+          a {
+            padding: 0 20px 0 0;
+          }
         }
       }
     }
@@ -1142,6 +1181,13 @@
     .about-heading {
       .about-inner-heading {
         width: 100%;
+      }
+    }
+    .about-inner-section {
+      .about-left-inner {
+        .graduation-cap {
+          width: 300px;
+        }
       }
     }
   }
@@ -1179,8 +1225,16 @@
   .contact {
     .con-heading {
       .con-inner-heading {
+        .con-h1 {
+          font-size: 40px;
+        }
         .con-h2 {
           text-align: center;
+          font-size: 40px;
+
+          .con-arrow {
+            width: 100px;
+          }
         }
       }
     }
@@ -1373,8 +1427,10 @@
         padding-left: 0;
 
         li {
-          padding: 0 10px 0 0;
-          font-size: 15px;
+          a {
+            font-size: 15px;
+            padding: 0 10px 0 0;
+          }
         }
       }
 

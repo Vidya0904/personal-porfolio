@@ -1,3 +1,4 @@
+import IMAGES from "../Assets";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -5,6 +6,9 @@ function Experience() {
   return (
     <>
       <section className="experience">
+         <div className="radial-circle">
+          <img src={IMAGES.radia_circle} />
+        </div>
         <Container>
           <div className="exp-heading">
             <div className="exp-inner-heading">
