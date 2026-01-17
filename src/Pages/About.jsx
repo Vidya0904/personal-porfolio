@@ -86,36 +86,33 @@ function About() {
                     </li>
                     <li>
                       <PiGraduationCapFill size={22} className="edu-cap" />
-                      <p className="edu-date">Jan 2021 – Aug 2022</p>
+                      <p className="edu-date">Aug 2017 – Nov 2020</p>
                       <h6>
-                        KCES's Institute of Management & Research, Jalgaon
+                        Bhusawal Arts, Science and P. O. Nahata Commerce
+                        College, Bhusawal
                       </h6>
                       <p className="edu-deg">
-                        Master of Computer Application (MCA)
+                        Bachelor of Computer Application (BCA)
                       </p>
-                      <span>89%</span>
+                      <span>88.96%</span>
                     </li>
                     <li>
                       <PiGraduationCapFill size={22} className="edu-cap" />
-                      <p className="edu-date">Jan 2021 – Aug 2022</p>
-                      <h6>
-                        KCES's Institute of Management & Research, Jalgaon
-                      </h6>
+                      <p className="edu-date">Jun 2015 – Feb 2017</p>
+                      <h6>Smt. P. K. Kotecha Ladies College, Bhusawal</h6>
                       <p className="edu-deg">
-                        Master of Computer Application (MCA)
+                        Higher Secondary Certificate (HSC)
                       </p>
-                      <span>89%</span>
+                      <span>61.08%</span>
                     </li>
                     <li>
                       <PiGraduationCapFill size={22} className="edu-cap" />
-                      <p className="edu-date">Jan 2021 – Aug 2022</p>
-                      <h6>
-                        KCES's Institute of Management & Research, Jalgaon
-                      </h6>
+                      <p className="edu-date">Mar 2015</p>
+                      <h6>Smt. P. K. Kotecha High School, Bhusawal</h6>
                       <p className="edu-deg">
-                        Master of Computer Application (MCA)
+                        Secondary School Certificate (SSC)
                       </p>
-                      <span>89%</span>
+                      <span>78.60%</span>
                     </li>
                   </ul>
                 </div>
