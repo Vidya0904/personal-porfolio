@@ -28,13 +28,13 @@ function Contact() {
     setSelectedChips((prev) =>
       prev.includes(chip)
         ? prev.filter((item) => item !== chip)
-        : [...prev, chip]
+        : [...prev, chip],
     );
   };
 
   return (
     <>
-      <section className="contact">
+      <section className="contact" id="contact">
         <div className="con-heading">
           <div className="con-inner-heading">
             <h1 className="con-h1">

@@ -6,7 +6,7 @@ import { GoArrowUpRight } from "react-icons/go";
 function CaseStudy() {
   return (
     <>
-      <section className="casestudy">
+      <section className="casestudy" id="case-study">
         <Container>
           <div className="cs-heading">
             <div className="cs-inner-heading">
