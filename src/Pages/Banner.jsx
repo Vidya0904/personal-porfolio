@@ -84,11 +84,11 @@ function Banner() {
               <span>Front End Development</span>
             </li>
             <li>
-              <img src={IMAGES.star2} width="20px" />
+              <img src={IMAGES.star2} width="25px" />
               <span>Web App Design</span>
             </li>
             <li>
-              <img src={IMAGES.star2} width="20px" />
+              <img src={IMAGES.star2} width="25px" />
               <span>UI/UX Design</span>
             </li>
           </ul>
