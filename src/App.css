@@ -1266,8 +1266,16 @@
     .cs-main-section {
       .cs-inner-section {
         .cs-col {
+          padding-left: 0;
           h3 {
             font-size: 28px;
+          }
+          .cs-details {
+            ul {
+              li {
+                display: block;
+              }
+            }
           }
         }
       }
