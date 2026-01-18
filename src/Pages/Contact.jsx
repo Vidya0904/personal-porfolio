@@ -4,18 +4,58 @@ import { Button, Col, Container, Form, FormGroup, Row } from "react-bootstrap";
 
 function Contact() {
   const [validated, setValidated] = useState(false);
+  const [selectedChips, setSelectedChips] = useState([]);
+  const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+
+    // Browser validation check
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
     }
 
-    setValidated(true);
-  };
+    // Chips validation (at least one required)
+    if (selectedChips.length === 0) {
+      alert("Please select at least one option.");
+      return;
+    }
 
-  const [selectedChips, setSelectedChips] = useState([]);
+    setLoading(true);
+
+    const formData = new FormData(form);
+    formData.append("services", selectedChips.join(", "));
+
+    try {
+      const res = await fetch("https://formspree.io/f/mreepqpe", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      console.log("Status:", res.status);
+      setTimeout(() => setStatus(""), 3000);
+
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+        setSelectedChips([]);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus(""), 5000);
+      }
+    } catch (error) {
+      setStatus("error");
+    }
+
+    setLoading(false);
+  };
 
   const chips = [
     "Frontend Developer",
@@ -58,6 +98,7 @@ function Contact() {
                     <Form.Control
                       required
                       type="text"
+                      name="name"
                       placeholder="Enter your name"
                     />
                   </Form.Group>
@@ -68,6 +109,7 @@ function Contact() {
                     <Form.Control
                       required
                       type="email"
+                      name="email"
                       placeholder="Where I can reply"
                     />
                   </Form.Group>
@@ -78,6 +120,7 @@ function Contact() {
                 <Form.Control
                   required
                   type="text"
+                  name="company"
                   placeholder="Your Company or website?"
                 />
               </Form.Group>
@@ -94,6 +137,8 @@ function Contact() {
                     >
                       <input
                         type="checkbox"
+                        // name="services"
+                        value={chip}
                         checked={selectedChips.includes(chip)}
                         onChange={() => toggleChip(chip)}
                         hidden
@@ -104,10 +149,23 @@ function Contact() {
                 </div>
               </Form.Group>
               <div className="sendme-btn">
-                <button type="submit" className="main-btn">
-                  Send Me
+                <button type="submit" className="main-btn" disabled={loading}>
+                  {loading ? "Sending..." : "Send Me"}
                 </button>
               </div>
+
+              {status === "success" && (
+                <p style={{ color: "green" }}>
+                  Message sent successfully. Thank you!
+                </p>
+              )}
+
+              {status === "error" && (
+                <p style={{ color: "red" }}>
+                  Something went wrong. Please try again.
+                </p>
+              )}
+
               <p className="sent-btn-txt">
                 I'll must get back to you within 24 hours
               </p>
